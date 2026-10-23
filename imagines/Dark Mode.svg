@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" role="img" aria-label="夜间模式">
+  <defs>
+    <mask id="moonMask" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <!-- 外圆：保留的月亮主体 -->
+      <circle cx="12" cy="12" r="10" fill="#ffffff" />
+      <!-- 内圆：向左偏移，挖掉左侧，形成右凸月牙 -->
+      <circle cx="7" cy="12" r="10" fill="#000000" />
+    </mask>
+  </defs>
+  
+  <!-- 黑色月牙，背景透明 -->
+  <circle cx="12" cy="12" r="10" fill="#000000" mask="url(#moonMask)" />
+</svg>

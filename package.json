@@ -1,0 +1,31 @@
+{
+  "name": "simple-forum",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Simple forum built with Hono, deploy-ready for Cloudflare Pages Functions + D1",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public --project-name simple-forum",
+    "preview": "wrangler pages dev public --remote",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run test/validate.test.ts test/auth.test.ts test/middleware.test.ts",
+    "test:integration": "vitest run test/app.test.ts test/app.pagination.test.ts",
+    "test:contract": "vitest run test/repository.memory.test.ts test/repository.d1.test.ts",
+    "db:migrate:local": "wrangler d1 migrations apply users --local",
+    "db:migrate:remote": "wrangler d1 migrations apply users --remote"
+  },
+  "dependencies": {
+    "hono": "^4.13.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "@types/node": "^20.11.0",
+    "miniflare": "3.20250718.3",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8",
+    "wrangler": "^3.114.17"
+  }
+}

@@ -1,0 +1,8 @@
+# pnpm 10+ 默认拦截依赖的 postinstall 脚本。
+# 这里显式放行 Cloudflare 工具链（wrangler dev/deploy）所需的三个包：
+# esbuild（打包）、workerd（本地运行时 Miniflare）、sharp（wrangler 图片能力）。
+# 如需重新选择，可删除本文件后运行 `pnpm approve-builds`。
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true

@@ -1,0 +1,11 @@
+# 统一文本文件换行，避免 Windows/Linux 协作时出现整文件 diff
+* text=auto eol=lf
+
+# 二进制资源，禁止换行转换与文本 diff
+*.ttf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
