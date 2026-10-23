@@ -333,11 +333,6 @@ pnpm test
 
 详细说明见 [`public/fonts/README.md`](public/fonts/README.md)。
 
-### 开源发布前检查
+### 声明 
 
-- [ ] 部署前把 `wrangler.jsonc` 的 `database_id` 占位符替换为自己的 ID（该改动不要提交）
-- [ ] 确认 `.dev.vars`、`*.log`、`.wrangler/` 等未被提交
-- [ ] 按需清空 `src/site/footer.ts` 中的个人信息与友情链接
-- [ ] 按需调整 `src/moderation/banned-words.ts` 词库
-- [ ] 更换站点名称与配色
-
+本项目为纯ai代码生成。

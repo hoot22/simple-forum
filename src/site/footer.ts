@@ -5,10 +5,10 @@
  * 两者分开是为了让你以后增删条目时不必改动任何代码。
  *
  * ── 三种写法
- *   { label: 'QQ', value: '3810378058' }                    // 纯文本：QQ 3810378058
+ *   { label: 'QQ', value: '***********' }                    // 纯文本：QQ ********
  *   { label: '邮箱', value: 'you@example.com' }              // 纯文本：邮箱 you@example.com
  *   { label: 'GitHub', href: 'https://github.com/用户名' }   // 可点击链接
- *   { label: 'QQ', value: '3810378058', href: 'https://…' }  // 文本 + 可点击
+ *   { label: 'QQ', value: '*********', href: 'https://…' }  // 文本 + 可点击
  *
  * ── 规则
  *   · label 必填；value 与 href 至少填一个，否则该条会被忽略。
@@ -29,15 +29,12 @@ export interface FooterLink {
 
 /** 联系方式：显示在页脚左侧 */
 export const CONTACT_LINKS: FooterLink[] = [
-  { label: 'QQ', value: '3810378058' },
-  { label: '邮箱', value: 'a13825021878@163.com' },
-  { label: 'GitHub', href: 'https://github.com/hoot22' },
+  /**{ label: '平台', value: '你的账号' } */
 ]
 
 /** 友情链接：显示在页脚右侧 */
 export const FRIEND_LINKS: FooterLink[] = [
-  { label: 'daedalus', href: 'https://luyingyilong.github.io/daedalus-web/' },
-  { label: 'cloudflare', href: 'https://www.cloudflare.com/' },
+  /**{ label: '网站名称', href: '链接' } */
 ]
 
 /** 以 http/https 开头的链接在新标签页打开，其它协议保持当前页 */
