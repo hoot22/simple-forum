@@ -333,6 +333,6 @@ pnpm test
 
 详细说明见 [`public/fonts/README.md`](public/fonts/README.md)。
 
-### 声明 
+### AI声明 
 
 本项目为纯ai代码生成。
